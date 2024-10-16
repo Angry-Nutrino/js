@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation and andding lists</title>
+</head>
+<body style="color: white;background-color: grey;">
+    <h2 style="font-family: 'Times New Roman', Times, serif;text-align: center;">
+        <b>Un - ordered Lists</b></h2>
+    <ul class="rupert">
+        <li>JAVA BASICS</li>
+    </ul>
+</body>
+<script>
+    function addli(langname){
+        const li=document.createElement('li')
+        li.innerHTML=langname
+        document.querySelector('.rupert').appendChild(li)
+    }
+    addli("Python basics")
+    function opti(lang){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.rupert').appendChild(li)
+    }
+    opti('DOJA')
+    const edit=document.querySelector("li:nth-child(1)");
+    //edit.innerHTML='BHOLA'
+    const secondli=document.createElement('li')
+    secondli.appendChild(document.createTextNode('HOLA'))
+    edit.appendChild(secondli)
+</script>
+</html>
