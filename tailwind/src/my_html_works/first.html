@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            /* display: flex;
+            flex-direction: column; */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #00eaff, #ff0026);
+        }
+        .mycarousel {
+            height: 350px;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            gap: 20px;  /* Space between cards */
+        }
+        .insdiv {
+            border: 1px solid;
+            border-radius: 5px;
+            text-align: center;
+            background-color: red;
+            width: 30%; /* Responsive width, adjusts based on screen size */
+            padding: 10px;
+        }
+        .images {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+        .copyright {
+            margin-top: 40px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: x-large;
+            position: relative;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1199px) {
+            .insdiv {
+                width: 45%; /* 2 cards per row on medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .insdiv {
+                width: 100%; /* 1 card per row on small screens */
+            }
+            .copyright {
+                font-size: large; /* Smaller font size on small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mycarousel {
+                height: 250px; /* Smaller height for carousel on very small screens */
+            }
+            .copyright {
+                font-size: medium; /* Adjust copyright font size */
+            }
+        }
+    </style>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide mycarousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pic1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pic2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pic3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container">
+        <div class="insdiv"><img src="pic1.jpg" class="images"><br><a href="https://youtu.be/TZDbe_8raSA?si=hYrSnNYthV_-Aj1Y" class="link">Watch Now</a></div>
+        <div class="insdiv"><img src="pic2.jpg" class="images"><br><a href="https://youtu.be/FeiiAvkAcnA?si=VLDICJWX34axsB_1" class="link">Watch Now</a></div>
+        <div class="insdiv"><img src="pic3.jpg" class="images"><br><a href="https://youtu.be/q8EevlEpQ2A?si=q8eZz_oJCzDkWfN5" class="link">Watch Now</a></div>
+    </div>
+
+    <!-- Copyright Section -->
+    <footer class="copyright">
+        This page belongs to ALKAMA &copy;
+    </footer>
+</body>
+</html>
+ 
